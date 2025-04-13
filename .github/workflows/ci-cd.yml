@@ -27,6 +27,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Debug directory
+        run: ls -l
+  
       - name: Install dependencies
         run: |
             cd SalemWorld
