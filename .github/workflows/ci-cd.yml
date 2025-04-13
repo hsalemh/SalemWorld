@@ -1,33 +1,41 @@
-name: CI/CD Pipeline Vue.js
+name: CI/CD Pipeline
+
 on:
   push:
     branches:
-      - CI/CD
       - main
+      - CI/CD
   pull_request:
     branches:
-      - CI/CD
       - main
+      - CI/CD
+
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      # Ajout : changer de répertoire
+      - name: Change to project directory
+        run: cd mon-site
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run build
+      - name: Build
         run: npm run build
 
-      - name: Deploy to Server
-        if: success()
-        run: |
-          echo "Deploying to production server..."
-          # Add your deployment command here
+      # Déploiement Netlify (commenté pour l’instant)
+      # - name: Deploy to Netlify
+      #   run: npx netlify-cli deploy --prod --dir=dist
+      #   env:
+      #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
