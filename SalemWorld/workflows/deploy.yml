@@ -27,7 +27,7 @@ jobs:
 
       #Aller au package.json
       - name : acces package.json
-        run : cd SalemWorld/SalemWorld/package.json 
+        run : cd package.json 
 
       # Installer les dépendances
       - name: Install dependencies
