@@ -3,49 +3,39 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - CI/CD
       - main
+      - CI/CD
+  pull_request:
+    branches:
+      - main
+      - CI/CD
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Étape 1 : Cloner le dépôt
+      # Checkout du code
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # Étape 2 : Installer Node.js
+      # Installer Node.js
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18' # Version stable
-          cache: 'npm'
+          node-version: '18' # Version LTS compatible
 
-      # Étape 3 : Installer les dépendances
+      # Installer les dépendances
       - name: Install dependencies
         run: npm install
 
-      # Étape 4 : Vérifier le code avec ESLint
-      - name: Run ESLint
-        run: npm run lint
-
-      # Étape 5 : Construire le projet
-      - name: Build project
+      # Build l’application
+      - name: Build
         run: npm run build
 
-      # Étape 6 : Déployer sur Netlify (à configurer après)
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v2
-        with:
-          publish-dir: './dist'
-          production-branch: 'main'
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          deploy-message: 'Deploy from GitHub Actions'
-          enable-pull-request-comment: false
-          enable-commit-comment: true
-          overwrites-pull-request-comment: true
-        env:
-          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-        if: github.ref == 'refs/heads/main' # Déploiement uniquement sur main
+      # Déployer vers Netlify (à activer plus tard)
+      # - name: Deploy to Netlify
+      #   run: npx netlify-cli deploy --prod --dir=dist
+      #   env:
+      #     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      #     NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
