@@ -15,29 +15,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout du code
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Installer Node.js
+      # Ajout : changer de répertoire
+      - name: Change to project directory
+        run: cd SalemWorld
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20.11.1' # Version LTS compatible
+          node-version: '20'
 
-      #Aller au package.json
-      - name : acces package.json
-        run : cd package.json 
-
-      # Installer les dépendances
       - name: Install dependencies
         run: npm install
 
-      # Build l’application
       - name: Build
         run: npm run build
 
-      # Déployer vers Netlify (à activer plus tard)
+      # Déploiement Netlify (commenté pour l’instant)
       # - name: Deploy to Netlify
       #   run: npx netlify-cli deploy --prod --dir=dist
       #   env:
