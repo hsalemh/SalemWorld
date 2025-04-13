@@ -20,7 +20,7 @@ jobs:
 
       # Ajout : changer de répertoire
       - name: Change to project directory
-        run: cd SalemWorld/SalemWorld
+        run: cd SalemWorld
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
