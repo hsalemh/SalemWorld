@@ -18,10 +18,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Ajout : changer de répertoire
-      - name: Change to project directory
-        run: cd SalemWorld/SalemWorld/package.json
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
