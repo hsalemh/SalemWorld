@@ -7,7 +7,7 @@
     </header>
     <main>
       <section class="hero">
-        <img src="C:/Users/salem/Desktop/Projets personnels/SALEMWORLD/Mon Site/SalemWorld/SalemWorld/src/assets/salem.jpg" alt="Ton Nom" class="profile-img" />
+        <img src="./assets/salem.jpg"  alt="Ton Nom" class="profile-img" />
         <h2>Bienvenue sur mon portfolio</h2>
         <p>
           Je suis passionné par l’architecture des systèmes, la cybersécurité, et le cloud.
