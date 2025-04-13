@@ -23,7 +23,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18' # Version LTS compatible
+          node-version: '20.11.1' # Version LTS compatible
 
       # Installer les dépendances
       - name: Install dependencies
