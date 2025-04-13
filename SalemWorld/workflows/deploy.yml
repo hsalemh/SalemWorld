@@ -25,6 +25,10 @@ jobs:
         with:
           node-version: '20.11.1' # Version LTS compatible
 
+      #Aller au package.json
+      - name : acces package.json
+        run : cd SalemWorld/SalemWorld/package.json 
+
       # Installer les dépendances
       - name: Install dependencies
         run: npm install
