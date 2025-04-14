@@ -40,6 +40,20 @@ jobs:
           cd SalemWorld
           npm run build
 
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v3
+        with:
+            username: ${{ secrets.DOCKERHUB_USERNAME }}
+            password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .  # Ajuste à "salemworld/" si sous-dossier
+          file: ./Dockerfile  # Spécifie Dockerfile (ou Dockerfile.prod si renommé)
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/salemworld:latest
+
 
       # Déploiement Netlify (commenté pour l’instant)
       # - name: Deploy to Netlify
