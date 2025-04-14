@@ -1,21 +1,51 @@
 <template>
-  <div id="app" class="">
+  <div id="app" class="d-flex flex-column min-vh-100">
     <header>
-      <nav>
-        <router-link to="/" class="nav-link">Accueil</router-link>
-        <router-link to="/about-me" class="nav-link">Ce que je suis</router-link>
-        <router-link to="/my-goals" class="nav-link">Ce que je veux</router-link>
-        <router-link to="/my-work" class="nav-link">Ce que je fais</router-link>
-        <router-link to="/my-projects" class="nav-link">Mes projets</router-link>
-        <router-link to="/contact" class="nav-link">Contact</router-link>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Main navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">{{ name }}</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <router-link to="/" class="nav-link" active-class="active">Accueil</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/about-me" class="nav-link" active-class="active">Ce que je suis</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/my-goals" class="nav-link" active-class="active">Ce que je veux</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/my-work" class="nav-link" active-class="active">Ce que je fais</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/my-projects" class="nav-link" active-class="active">Mes projets</router-link>
+              </li>
+              <li class="nav-item">
+                <router-link to="/contact" class="nav-link" active-class="active">Contact</router-link>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-    <main>
+    <main class="flex-grow-1">
       <transition name="fade" mode="out-in">
         <router-view />
       </transition>
     </main>
-    <footer>
+    <footer class="bg-light text-center py-3">
       <p>© 2025 - {{ name }}</p>
     </footer>
   </div>
@@ -28,68 +58,13 @@ export default defineComponent({
   name: 'App',
   data() {
     return {
-      name: 'Ton Nom', // Remplace par ton nom
+      name: 'Salem', 
     };
   },
 });
 </script>
 
 <style scoped>
-
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  .nav-link {
-    font-size: 1rem;
-    padding: 0.5rem;
-    width: 80%;
-    text-align: center;
-  }
-}
-#app {
-  font-family: 'Inter', Arial, sans-serif;
-  color: #333;
-}
-header {
-  background-color: #1e3a8a;
-  padding: 1rem;
-}
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-.nav-link {
-  color: white;
-  text-decoration: none;
-  font-size: 1.1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-.nav-link:hover {
-  background-color: #3b82f6;
-}
-.nav-link.router-link-exact-active {
-  background-color: #f97316;
-}
-main {
-  min-height: 80vh;
-  padding: 2rem;
-}
-footer {
-  background-color: #f1f1f1;
-  text-align: center;
-  padding: 1rem;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s ease;
@@ -97,5 +72,10 @@ footer {
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+.nav-link.active {
+  background-color: #f97316;
+  color: white;
+  border-radius: 5px;
 }
 </style>
