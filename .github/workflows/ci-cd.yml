@@ -49,8 +49,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: .  # Ajuste à "salemworld/" si sous-dossier
-          file: ./Dockerfile  # Spécifie Dockerfile (ou Dockerfile.prod si renommé)
+          context: ./SalemWorld
+          file: ./SalemWorld/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/salemworld:latest
 
