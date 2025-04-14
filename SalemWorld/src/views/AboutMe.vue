@@ -1,40 +1,51 @@
 <template>
-    <div class="about-me">
-      <h2>Ce que je suis</h2>
-      <p>{{ description }}</p>
+  <div class="about-me container my-5">
+    <h2 class="display-6 text-primary text-center mb-4">Ce que je suis</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <p class="lead text-muted mb-4">
+              Je m'appelle {{ name }}, étudiant en MSc Cybersécurité & Cloud à Epitech. Passionné par
+              l’architecture des systèmes et la sécurisation des infrastructures, je m’efforce de
+              construire des solutions robustes et innovantes.
+            </p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <strong>Formation :</strong> MSc Pro Epitech, spécialisation Cloud & Sécurité
+              </li>
+              <li class="list-group-item">
+                <strong>Intérêts :</strong> DevOps, pentesting, cloud computing (AWS, Azure)
+              </li>
+              <li class="list-group-item">
+                <strong>Valeurs :</strong> Curiosité, rigueur, apprentissage continu
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-  </template>
-  
-  <script lang="ts">
-  import { defineComponent } from 'vue';
-  
-  export default defineComponent({
-    name: 'AboutMe',
-    data() {
-      return {
-        description:
-          'Je suis un étudiant passionné par la cybersécurité, le cloud, et l’architecture système. J’aime résoudre des problèmes complexes et apprendre continuellement.',
-      };
-    },
-  });
-  </script>
-  
-  <style scoped>
-  .about-me {
-    font-family: 'Inter', Arial, sans-serif;
-    text-align: center;
-    padding: 2rem;
-    min-height: 80vh;
-  }
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #1e3a8a;
-  }
-  p {
-    font-size: 1.1rem;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #555;
-  }
-  </style>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'AboutMe',
+  data() {
+    return {
+      name: 'Salem', 
+    };
+  },
+});
+</script>
+
+<style scoped>
+.card {
+  background-color: #f8f9fa;
+}
+.list-group-item {
+  background-color: transparent;
+}
+</style>
