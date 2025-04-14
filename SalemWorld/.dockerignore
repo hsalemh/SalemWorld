@@ -1,0 +1,7 @@
+node_modules
+SalemWorld/node_modules
+dist
+SalemWorld/dist
+.git
+.github
+*.log
