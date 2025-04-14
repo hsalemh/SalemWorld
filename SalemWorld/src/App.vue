@@ -1,84 +1,85 @@
-<!-- src/App.vue -->
 <template>
-  <div id="app">
+  <div id="app" class="">
     <header>
-      <h1>HAMIANE Salem</h1>
-      <p>Étudiant en Cybersécurité & Cloud à Epitech</p>
+      <nav>
+        <router-link to="/" class="nav-link">Accueil</router-link>
+        <router-link to="/about-me" class="nav-link">Ce que je suis</router-link>
+        <router-link to="/my-goals" class="nav-link">Ce que je veux</router-link>
+        <router-link to="/my-work" class="nav-link">Ce que je fais</router-link>
+        <router-link to="/my-projects" class="nav-link">Mes projets</router-link>
+        <router-link to="/contact" class="nav-link">Contact</router-link>
+      </nav>
     </header>
     <main>
-      <section class="hero">
-        <img src="./assets/salem.jpg"  alt="Ton Nom" class="profile-img" />
-        <h2>Bienvenue sur mon portfolio</h2>
-        <p>
-          Je suis passionné par l’architecture des systèmes, la cybersécurité, et le cloud.
-          Découvrez mes projets et mes compétences !
-        </p>
-        <button class="cta">Voir mes projets</button>
-      </section>
+      <transition name="fade" mode="out-in">
+        <router-view />
+      </transition>
     </main>
     <footer>
-      <p>&copy; 2025 - Salem</p>
+      <p>© 2025 - {{ name }}</p>
     </footer>
   </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
   name: 'App',
-};
+  data() {
+    return {
+      name: 'Ton Nom', // Remplace par ton nom
+    };
+  },
+});
 </script>
 
 <style scoped>
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 80%;
+    text-align: center;
+  }
+}
 #app {
   font-family: 'Inter', Arial, sans-serif;
   color: #333;
 }
 header {
-  background-color: #1e3a8a; /* Bleu tech */
-  color: white;
-  text-align: center;
-  padding: 2rem;
+  background-color: #1e3a8a;
+  padding: 1rem;
 }
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-header p {
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
-main {
-  min-height: 80vh;
+nav {
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
-.hero {
-  text-align: center;
-  padding: 2rem;
-  max-width: 600px;
-}
-.hero h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.hero p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  color: #555;
-}
-.cta {
-  background-color: #f97316; /* Orange moderne */
+.nav-link {
   color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: background-color 0.3s;
 }
-.cta:hover {
-  background-color: #e55a00;
+.nav-link:hover {
+  background-color: #3b82f6;
+}
+.nav-link.router-link-exact-active {
+  background-color: #f97316;
+}
+main {
+  min-height: 80vh;
+  padding: 2rem;
 }
 footer {
   background-color: #f1f1f1;
@@ -87,5 +88,14 @@ footer {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
