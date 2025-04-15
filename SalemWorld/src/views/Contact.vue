@@ -36,12 +36,12 @@
                   required
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-primary">Envoyer</button>
+              <!--<button type="submit" class="btn btn-primary">Envoyer</button> -->
             </form>
             <div class="mt-4 text-center">
               <p class="text-muted">
-                Ou contactez-moi via :
-                <a :href="'mailto:' + email" class="text-primary">Email</a> |
+                 Contactez-moi via :
+                <a :href="'mailto:salem.hamiane@outlook.fr' + email" class="text-primary">Email</a> |
                 <a href="https://www.linkedin.com/in/salem-h-376335223 " target="_blank" class="text-primary">LinkedIn</a>
               </p>
             </div>
