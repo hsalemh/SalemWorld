@@ -1,8 +1,8 @@
 <template>
   <div class="home-page">
-    <header class="bg-primary text-white text-center py-5">
+    <header class="text-center py-5" style="background: linear-gradient(gray,white);">
       <h1 class="display-4 mb-3">{{ name }}</h1>
-      <p class="lead">Étudiant en Cybersécurité & Cloud à Epitech</p>
+      <p class="lead">Étudiant en Cybersécurité & Cloud à <b>EPITECH</b></p>
     </header>
     <main class="container my-5">
       <section class="hero text-center">
@@ -11,7 +11,8 @@
           Je suis passionné par l’architecture des systèmes, la cybersécurité, et le cloud.
           Découvrez mes projets et mes compétences !
         </p>
-        <router-link to="/my-projects" class="btn btn-warning">Voir mes projets</router-link>
+        <router-link to="/my-projects" class="btn btn-warning">Voir mes projets</router-link><br><br>
+       <!-- <a href="./assets/curriculum.pdf" class="btn btn-warning" download="Curriculum_Salem_EPITECH.pdf">Télécharger le CV</a> -->
       </section>
     </main>
   </div>
