@@ -9,15 +9,21 @@
               Mon objectif est de devenir un expert en cybersécurité et cloud computing,
               contribuant à des architectures sécurisées et évolutives pour les entreprises
               innovantes.
+              Avant de gérer des projets et des structures plus grandes et pouvoir me tourner vers
+              la R&D
             </p>
             <div class="row">
               <div class="col-md-6 mb-3">
                 <h5 class="text-primary">Court terme</h5>
-                <p>Maîtriser les outils DevOps (Docker, Kubernetes) et obtenir des certifications (AWS, CEH).</p>
+                <p>Maîtriser les outils DevOps (Docker, Kubernetes), obtenir des certifications (AWS, Azure, TryHackme...)
+                  et monter en compétences via toutes les aventures auquels je prend part.
+                </p>
               </div>
               <div class="col-md-6 mb-3">
                 <h5 class="text-primary">Long terme</h5>
-                <p>Concevoir des systèmes cloud sécurisés et mener des audits de sécurité complexes.</p>
+                <p>Concevoir des systèmes sécurisés, mener des audits de sécurité complexes et être
+                  reconnu dans mon domaine.
+                </p>
               </div>
             </div>
           </div>

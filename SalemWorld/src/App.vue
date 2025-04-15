@@ -1,7 +1,7 @@
 <template>
   <div id="app" class="d-flex flex-column min-vh-100">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary" aria-label="Main navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background: linear-gradient(black, gray);" aria-label="Main navigation">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">{{ name }}</a>
           <button
@@ -21,16 +21,16 @@
                 <router-link to="/" class="nav-link" active-class="active">Accueil</router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/about-me" class="nav-link" active-class="active">Ce que je suis</router-link>
+                <router-link to="/about-me" class="nav-link" active-class="active">Moi</router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/my-goals" class="nav-link" active-class="active">Ce que je veux</router-link>
+                <router-link to="/my-goals" class="nav-link" active-class="active">Objectifs</router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/my-work" class="nav-link" active-class="active">Ce que je fais</router-link>
+                <router-link to="/my-work" class="nav-link" active-class="active">Blog</router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/my-projects" class="nav-link" active-class="active">Mes projets</router-link>
+                <router-link to="/my-projects" class="nav-link" active-class="active">Projets</router-link>
               </li>
               <li class="nav-item">
                 <router-link to="/contact" class="nav-link" active-class="active">Contact</router-link>
