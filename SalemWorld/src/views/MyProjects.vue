@@ -1,6 +1,8 @@
 <template>
-  <div class="my-projects container my-5">
-    <h2 class="display-6 text-primary text-center mb-4">Mes projets</h2>
+  <div style="background: linear-gradient(grey,white);">
+    <div class="my-projects container">
+      <br><br>
+    <h4 class="text text-center mb-4">MES PROJETS</h4><br><br>
     <div class="row justify-content-center">
       <div class="col-lg-10">
         <div class="row g-4">
@@ -104,6 +106,7 @@
         <br><br>
       </div>
     </div>
+  </div>
   
 </template>
 
