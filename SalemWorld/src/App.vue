@@ -3,7 +3,7 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background: linear-gradient(black, gray);" aria-label="Main navigation">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">{{ name }}</a>
+          <a class="navbar-brand" href="/">{{ name }}</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -27,7 +27,7 @@
                 <router-link to="/my-goals" class="nav-link" active-class="active">Objectifs</router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/my-work" class="nav-link" active-class="active">Blog</router-link>
+                <router-link to="/my-work" class="nav-link" active-class="active">Acutalité</router-link>
               </li>
               <li class="nav-item">
                 <router-link to="/my-projects" class="nav-link" active-class="active">Projets</router-link>
@@ -46,7 +46,7 @@
       </transition>
     </main>
     <footer class="bg-light text-center py-3">
-      <p>© 2025 - {{ name }}</p>
+      <p> Téléphone : +33751300329 &nbsp;&nbsp; © 2025 - {{ name }} &nbsp;&nbsp; <a href="https://www.linkedin.com/in/salem-h-376335223/">LinkedIn</a></p>
     </footer>
   </div>
 </template>
