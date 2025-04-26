@@ -7,9 +7,9 @@
       <div class="col-lg-10">
         <div class="row g-4">
           <div class="col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
+            <div class="card h-100 border-0 shadow-sm" style="background-image: url('../assets/1.jpg'); background-size: cover;">
               <div class="card-body">
-                <h5 class="card-title text-primary">TRINITY</h5>
+                <h5 class="card-title text-primary text-center">TRINITY</h5>
                 <p class="card-text">
                   Création d'un ensemble de plateformes pour la vente en ligne de produit alimentaire via
                   l'API openfoodfact.
@@ -22,14 +22,15 @@
                   Terraform et Azur pour le déploiement.
                   <br>NB : il s'agit d'un projet de groupe
                 </p>
-                <a href="https://github.com/hsalemh/TRINITY" class="btn btn-warning">Lien Git</a>
+                <p class="text-center"><router-link to="/trinity" class="btn btn-warning">PDF</router-link></p>
+                <p class="text-center"><a href="https://github.com/hsalemh/TRINITY" class="btn btn-warning">Lien Git</a></p>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="card h-100 border-0 shadow-sm">
               <div class="card-body">
-                <h5 class="card-title text-primary">SalemWorld</h5>
+                <h5 class="card-title text-primary text-center">SalemWorld</h5>
                 <p class="card-text">
                   Site web faisant office de portfolio. <br>
                   Ce dernier à été fait utilisant Vite/Vuejs. <br>
@@ -42,7 +43,7 @@
                   afin de rendre ce simple site web qui n'est pas si simple optimale, notamment 
                   via l'ajout d'un Backend et la mise à jours de certains points.
                 </p> 
-                <a href="https://github.com/hsalemh/SalemWorld" class="btn btn-warning">Lien Git</a>
+                <p class="text-center"><a href="https://github.com/hsalemh/SalemWorld" class="btn btn-warning">Lien Git</a></p>
               </div>
             </div>
           </div>
@@ -52,7 +53,7 @@
           <div class="col-md-6">
             <div class="card h-100 border-0 shadow-sm">
               <div class="card-body">
-                <h5 class="card-title text-primary">HEBWEB</h5>
+                <h5 class="card-title text-primary text-center">HEBWEB</h5>
                 <p class="card-text">
                   Création d'une plateforme de vente d'hébérgement en ligne en cours de production.
                   Utilisation de Angular 19 pour le front end, de Spring boot pour le back-end.
@@ -61,14 +62,14 @@
                   projet en cours ...
                 </p>
                 <br><br><br><br>
-                <a href="https://github.com/hsalemh/HEBWEB" class="btn btn-warning">Lien Git</a>
+                <p class="text-center"><a href="https://github.com/hsalemh/HEBWEB" class="btn btn-warning">Lien Git</a></p>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="card h-100 border-0 shadow-sm">
               <div class="card-body">
-                <h5 class="card-title text-primary">CIA</h5>
+                <h5 class="card-title text-primary text-center">CIA</h5>
                 <p class="card-text">
                   Attaquer des machines virtuelles afin de récupérer un mot de passe, puis 
                   sécurisé les différentes machines.
@@ -81,7 +82,7 @@
                   ✓ Nexus <br>
                   ✓ ... 
                 </p>
-                <router-link to="/my-projects" class="btn btn-warning">En cours ...</router-link>
+                <p class="text-center"><router-link to="/my-projects" class="btn btn-warning">En cours ...</router-link></p>
               </div>
             </div>
           </div>
@@ -90,7 +91,7 @@
         <div class="row g-4">
           <div class="col-md-6">
             <div class="card h-100 border-0 shadow-sm">
-              <h5 class="card-title text-primary">Jack the ripper</h5>
+              <h5 class="card-title text-primary text-center">Jack the ripper</h5>
               <p class="card-text">
                 Projet de transformation digitale relative à la ville du Kremlin-bicêtre.
               </p>
