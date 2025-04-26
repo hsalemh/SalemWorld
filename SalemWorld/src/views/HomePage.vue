@@ -14,8 +14,32 @@
         </p>
         <router-link to="/my-projects" class="btn btn-warning">Voir mes projets</router-link><br><br>
         <a href="https://github.com/hsalemh/SalemWorld" class="btn btn-warning">Lien vers mon Github</a>
+
+        <br><br>      <br><br>
        <!-- <a href="./assets/curriculum.pdf" class="btn btn-warning" download="Curriculum_Salem_EPITECH.pdf">Télécharger le CV</a> -->
       </section>
+      <div class="row justify-content-center">
+        <div class="col-sm-6">
+          <img src="../assets/lead1.jpg" alt="image" class="img-fluid  mx-auto d-block" style="width: auto; height: auto;" />
+        </div>
+        <div class="col-sm-6">
+          <img src="../assets/lead2.jpg" alt="image" class="img-fluid  mx-auto d-block" style="width: auto; height: auto;" />
+          <br><br><br>
+        </div>
+        <div class="col-sm-12"> <hr> <br> <br> </div>
+        <div class="col-sm-6">
+          <img src="../assets/trinity-devops-front-images-0.jpg" alt="image" class="img-fluid  mx-auto d-block" style="width: auto; height: auto;" />
+        </div>
+        <div class="col-sm-6">
+          <img src="../assets/trinity-devops-front-images-1.jpg" alt="image" class="img-fluid  mx-auto d-block" style="width: auto; height: auto;" />
+        </div>
+        <div class="col-sm-6">
+          <img src="../assets/trinity-devops-front-images-2.jpg" alt="image" class="img-fluid  mx-auto d-block" style="width: auto; height: auto;" />
+        </div>
+        <div class="col-sm-6">
+          <img src="../assets/trinity-devops-front-images-3.jpg" alt="image" class="img-fluid  mx-auto d-block" style="width: auto; height: auto;" />
+        </div>
+      </div>
     </main>
   </div>
 </template>

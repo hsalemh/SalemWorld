@@ -6,6 +6,7 @@ import MyWork from '../views/MyWork.vue';
 import MyProjects from '../views/MyProjects.vue';
 import Contact from '../views/Contact.vue';
 import TrinityApp from '../views/TrinityApp.vue';
+import JackRipper from '../views/JackRipper.vue';
 
 const routes: RouteRecordRaw[] = [
   {
@@ -42,6 +43,11 @@ const routes: RouteRecordRaw[] = [
     path: '/trinity',
     name: 'TrinityApp',
     component: TrinityApp,
+  },
+  {
+    path: '/jackripper',
+    name: 'JackRipper',
+    component: JackRipper,
   },
 ];
 
