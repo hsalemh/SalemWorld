@@ -36,11 +36,11 @@
                   required
                 ></textarea>
               </div>
-              <p class="text-center">
+            <!--  <p class="text-center">
                 <button type="submit" class="btn btn-primary" :disabled="isSubmitting">
                 {{ isSubmitting ? 'Envoi...' : 'Envoyer' }}
               </button>
-              </p>
+              </p> -->
             </form>
             <div v-if="successMessage" class="alert alert-success mt-3">
               {{ successMessage }}
@@ -81,7 +81,7 @@ export default defineComponent({
       errorMessage: '',
     };
   },
-  methods: {
+ /* methods: {
     async submitForm() {
       this.isSubmitting = true;
       this.successMessage = '';
@@ -100,7 +100,7 @@ export default defineComponent({
         this.isSubmitting = false;
       }
     },
-  },
+  },*/
 });
 </script>
 
