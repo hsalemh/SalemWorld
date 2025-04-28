@@ -2,45 +2,34 @@
   <div style="background: linear-gradient(grey, white);">
     <div class="about-me container">
       <br><br>
-    <h4 class="text-white text-center mb-4"><b>Qui suis je ?</b></h4> <br><br>
+    <h4 class="text-white text-center mb-4"><b>QUI SUIS JE ?</b></h4> <br><br>
     <div class="row justify-content-center">
       <div class="col-sm-4 text-center card 3-z-depth" style="background: lightgrey;">
-        <p>            Bonjour, <br>
+        <p>         <br>   Bonjour, <br>
             Je suis {{ name }}, étudiant en master "Architecte des systèmes d'information" à EPITECH. <br> <br>
-            Je pourrais dire plein de choses et me définir de plein de façons. <br>
-            Je pourrais dire que je sais écrire des poémes à la limite du slam, que j'aime beaucoup
-            le foot, que j'aime apprendre plein d'univers diffèrents mais je vais rester sur ce qui
-            nous intéresse et ce qui gravite autour. <br></p>
+            Curieux de nature, j’aime explorer différents univers <br>
+            entre écriture, hirsoire, sport et technologies mais ici, concentrons-nous sur
+             l’essentiel : construire, améliorer et sécuriser des systèmes d'information.<br></p>
       </div>
       <div class="col-sm-1"></div>
       <div class="col-sm-4 text-center text-white card 3-z-depth" style="background: black;">
         <br><br>
-        <p>            J'ai toujours été passionné par les mathématiques, 
-            la physique et le fonctionnement des choses. Après un bac scientifique,
-            j'ai étudié les maths, la physique et l'informatique. <br>
-            Je me suis d'abord orienté vers la physique 
-            avant de revenir à l'informatique.</p>
+        <p> Passionné de sciences et de logique, 
+          j'ai naturellement suivi un bac scientifique avant de me plonger
+           dans les mathématiques, la physique puis l'informatique. <br>
+            Mon chemin a oscillé entre la physique et l'IT, 
+            avant de trouver ma voie dans ce dernier domaine.</p>
       </div>
       <div class="col-lg-8"><br></div>
-      <div class="col-lg-5 card 3-z-depth text-center">
-            Parallèlement à ma scolarité, j'ai acquis une expérience précieuse 
-            en service client avec une entreprise de livraison haut de gamme.
-            J'ai pu faire tout ce que le poste permettait.
-            Des livraisons au recrutement en passant
-            par la gestion d'équipes, la relation client, la logistique et la gestion des crises.
-            Si je parle avec autant de détails, c'est pour souligner que j'aime être transverse dans
-            ce que je fais. <br><br>
-            J'ai ensuite obtenu une licence en conception et développement d'applications,
-            apprenant à créer des applications de bout en bout.
-            Licence qui a été validée suite à un stage de 3 mois dans un environnement agréable. <br><br>
-            D'abord attiré par la data science,
-            j'ai découvert ma passion pour les réseaux et la cybersécurité lors de ma première année de Master.
-            La diversité et la transversalité du domaine m'ont vraiment captivé.
-            J'ai réalisé à ce momement là que ce que qui m'animait le plus, c'était l'architecture des systèmes, les améliorer et les développer.
-            Qu'il s'agisse d'une application, d'un processus, d'une idée ou autre.
-            En ce sens, et en tenant compte de tout ce que j'ai écris auparavant, la cybersécurité et le cloud
-            se sont révélés comme des choix naturels. <br><br>
-            C'est pourquoi à la suite d'un premier master plus général, j'ai intégré Epitech.
+      <div class="col-lg-5 card 3-z-depth text-center"> <br>
+        En parallèle de mes études, j’ai enrichi mon profil grâce à une expérience complète 
+        en service client premium : livraisons, gestion d'équipes, logistique et recrutement. <br>
+        Diplômé d’une licence en développement d’applications, 
+        validée par un stage épanouissant, je me suis d'abord intéressé 
+        à la data science avant de tomber passionné par les réseaux et la cybersécurité. <br><br>
+        L'architecture des systèmes, leur conception, leur amélioration est devenue une évidence pour moi. <br><br>
+        Naturellement, j'ai poursuivi mon parcours à EPITECH pour me spécialiser 
+        dans le cloud et la cybersécurité.. <br><br>
     </div></div> <br>
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -61,7 +50,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> <br><br>
   </div>
   </div>
 </template>

@@ -12,7 +12,7 @@
               Je travaille sur des projets pratiques mêlant
               programmation, gestion de projet,
               cybersécurité et cloud. <br>
-              Je Travaille aussi sur des projets personnels
+              Je travaille aussi sur des projets personnels
               pour aiguiser mes compétences et m'approcher de mes aspirations afin de devenir
               la meilleure version de moi-même.
             </p>
