@@ -36,23 +36,13 @@
                   required
                 ></textarea>
               </div>
-            <!--  <p class="text-center">
-                <button type="submit" class="btn btn-primary" :disabled="isSubmitting">
-                {{ isSubmitting ? 'Envoi...' : 'Envoyer' }}
-              </button>
-              </p> -->
+              <!--<button type="submit" class="btn btn-primary">Envoyer</button> -->
             </form>
-            <div v-if="successMessage" class="alert alert-success mt-3">
-              {{ successMessage }}
-            </div>
-            <div v-if="errorMessage" class="alert alert-danger mt-3">
-              {{ errorMessage }}
-            </div>
             <div class="mt-4 text-center">
               <p class="text-muted">
-                Ou contactez-moi via :
-                <a :href="'mailto:' + email" class="text-primary">Email</a> |
-                <a href="https://www.linkedin.com/in/salem-h-376335223/" target="_blank" class="text-primary">LinkedIn</a>
+                 Contactez-moi via :
+                <a :href="'mailto:salem.hamiane@outlook.fr' + email" class="text-primary">Email</a> |
+                <a href="https://www.linkedin.com/in/salem-h-376335223 " target="_blank" class="text-primary">LinkedIn</a>
               </p>
             </div>
           </div>
@@ -64,43 +54,25 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import axios from 'axios';
 
 export default defineComponent({
   name: 'Contact',
   data() {
     return {
-      email: 'salem.hamiane@outlook.fr', 
+      email: 'salem.hamiane@outlook.fr', // Remplace par ton email
       form: {
         name: '',
         email: '',
         message: '',
       },
-      isSubmitting: false,
-      successMessage: '',
-      errorMessage: '',
     };
   },
- /* methods: {
-    async submitForm() {
-      this.isSubmitting = true;
-      this.successMessage = '';
-      this.errorMessage = '';
-      try {
-        const response = await axios.post(
-          'https://TON_API_GATEWAY_ID.execute-api.REGION.amazonaws.com/prod/contact',
-          this.form
-        );
-        this.successMessage = 'Message envoyé avec succès !';
-        this.form = { name: '', email: '', message: '' };
-      } catch (error) {
-        this.errorMessage = 'Erreur lors de l’envoi. Veuillez réessayer.';
-        console.error(error);
-      } finally {
-        this.isSubmitting = false;
-      }
+  methods: {
+    submitForm() {
+      alert('Formulaire envoyé ! (Simulation)');
+      this.form = { name: '', email: '', message: '' };
     },
-  },*/
+  },
 });
 </script>
 
