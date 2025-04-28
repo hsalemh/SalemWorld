@@ -92,8 +92,8 @@
         <div class="row justify-content-center g-4">
           <div class="col-md-6">
             <div class="card h-100 border-0 shadow-sm">
-              <h5 class="card-title text-primary text-center">Jack the ripper</h5> <br>
-              <p class="text">
+              <h5 class="card-title text-primary text-center"> <br>Jack the ripper</h5> <br>
+              <p class="text-center">
                 Projet de transformation digitale relative à la ville du Kremlin-bicêtre.
                 Le sujet étant d'améliorer le processsus de collecte des déchets à travers la 
                 ville via une application mobile et un site web.
