@@ -27,7 +27,7 @@
                 <router-link to="/my-goals" class="nav-link" active-class="active">Objectifs</router-link>
               </li>
               <li class="nav-item">
-                <router-link to="/my-work" class="nav-link" active-class="active">Acutalité</router-link>
+                <router-link to="/my-work" class="nav-link" active-class="active">Actualité</router-link>
               </li>
               <li class="nav-item">
                 <router-link to="/my-projects" class="nav-link" active-class="active">Projets</router-link>

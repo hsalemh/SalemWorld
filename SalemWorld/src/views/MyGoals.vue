@@ -25,8 +25,9 @@
               </div>
               <div class="col-md-6 mb-3">
                 <h5 class="text-primary">Long terme</h5>
-                <p>Concevoir des systèmes sécurisés, mener des audits de sécurité complexes et être
-                  reconnu dans mon domaine tout en gérant de grands projets.
+                <p>- Concevoir des systèmes sécurisés. <br>
+                  - Mener des audits de sécurité complexes. <br>
+                  - Être reconnu dans mon domaine tout en gérant de grands projets.
                 </p>
               </div>
             </div>
