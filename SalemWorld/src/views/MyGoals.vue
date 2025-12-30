@@ -17,8 +17,7 @@
             <div class="row">
               <div class="col-md-6 mb-3">
                 <h5 class="text-primary">Court terme</h5>
-                <p>- Décrocher un poste en Alternance dans mes domaines de compétences. <br>
-                  - Maitriser les outils DevOps. <br>
+                <p>
                   - Obtenir des certifications AWS, AZURE, CISCO, TryHackMe. <br>
                   - Obtenir Mon diplôme d'ingénieur.
                 </p>
