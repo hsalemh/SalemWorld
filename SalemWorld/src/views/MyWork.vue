@@ -20,11 +20,9 @@
               <div class="col-md-6">
                 <div class="card h-100 border-0 shadow-sm">
                   <div class="card-body">
-                    <h5 class="card-title text-primary text-center">💼 Recherche d'Opportunités 💼</h5>
+                    <h5 class="card-title text-primary text-center">💼 ALTERNANCE 💼</h5>
                     <p class="card-text">
-                      Je suis actuellement à la recherche d'une <b>Alternance</b> ou d'un Stage dans des domaines qui 
-                      sont affiliés au <b>CLOUD</b>, à la <b>Cybersécurité</b> ou toute offre annexe et en relation
-                      avec le développement et l'automatisation.
+                      Je suis actuellement en <b>Alternance</b> à <b>ALLIANZ TECHNOLOGY</b>
                     </p>
                   </div>
                 </div>
@@ -37,49 +35,6 @@
                       Projet complets englobant l'ensemble des compétences 
                       utiles à un développeur en tenant compte de la <b>Cybersécurité</b>, du <b>DevOps</b>, 
                       de la programmation et chaque étape d'un projet à <b>Epitech</b>.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title text-primary text-center">🚀 Junior Conseil Taker 🚀</h5>
-                    <p class="card-text"> 
-                      Mes missions au sein de la junior initiative de <b>EPITECH</b> en tant que
-                      chargé d'affaire sont les suivantes : <br> 
-                      - Collaborer avec les équipes en places. <br>
-                      - Mise en relation avec de nouveaux prospect, en faire des clients et les
-                      accompagner dans la réussite des projets.<br>
-                      - Business développement.</p>
-                    <p class="text-center">
-                      <a href="https://juniortaker.com/" class="btn btn-warning">TAKER</a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title text-primary text-center">👊 Projets Personnels 👊</h5>
-                    <p class="card-text">
-                      Parmi les projets sur lesquels je travaille, il y'a 
-                      quelques uns qui ont pour vocation de m'accompagner dans l'atteinte de mes
-                      objectifs professionels. Parmi eux : <br>
-                      - HEBWEB. <br>
-                      - Cours en ligne via les différentes plateformes. <br>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card h-100 border-0 shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title text-primary text-center">🌞 Du Miel 🌞</h5>
-                    <p class="card-text">
-                      Création d'un site vitrine et définition d'une stratégie marketting et 
-                      commerciale pour articuler les contours d'un projet de vente de 
-                      patisserie.
                     </p>
                   </div>
                 </div>
